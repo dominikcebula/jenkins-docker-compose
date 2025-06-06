@@ -16,6 +16,8 @@ It's especially useful for experimentation and simple proof-of-concept (PoC) pro
 
 ## Usage
 
+### Starting Jenkins
+
 To start Jenkins, run:
 
 ```bash
@@ -27,6 +29,11 @@ Then open your browser and go to: http://localhost:8080/
 You should see Jenkins running:
 
 ![jenkins.png](docs/jenkins.png)
+
+### Adding Local Jenkins Plugins
+
+Add or link [.hpi](https://wiki.jenkins.io/display/JENKINS/Plugin+Structure) under
+folder [local-plugins](local-plugins).
 
 ## Author
 
