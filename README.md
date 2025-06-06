@@ -32,7 +32,7 @@ You should see Jenkins running:
 
 ### Adding Local Jenkins Plugins
 
-Add or link [.hpi](https://wiki.jenkins.io/display/JENKINS/Plugin+Structure) under
+Add or link [.hpi](https://wiki.jenkins.io/display/JENKINS/Plugin+Structure) file representing Jenkins Plugin under
 folder [local-plugins](local-plugins).
 
 ## Author
