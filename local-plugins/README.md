@@ -1,0 +1,1 @@
+This folder holds Local Jenkins Plugins in [.hpi](https://wiki.jenkins.io/display/JENKINS/Plugin+Structure) format. 
