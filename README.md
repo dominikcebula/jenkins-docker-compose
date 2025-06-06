@@ -11,7 +11,7 @@ It's especially useful for experimentation and simple proof-of-concept (PoC) pro
 
 * Supports running locally compiled Jenkins plugins in [.hpi](https://wiki.jenkins.io/display/JENKINS/Plugin+Structure)
   format
-* Preconfigured with popular Jenkins plugins
+* Preconfigured with popular Jenkins [plugins](plugins/plugins.txt)
 * Includes sample jobs for demonstration
 
 ## Usage
