@@ -1,0 +1,40 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job">
+    <description>Example pipeline for Job B</description>
+    <keepDependencies>false</keepDependencies>
+
+    <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps">
+        <script>
+            <![CDATA[
+                pipeline {
+                    agent any
+
+                    options { timestamps() }
+
+                    stages {
+                        stage('Say hello') {
+                            steps {
+                                echo "👋 Hello, ${env.BUILD_USER_ID ?: 'world'} from Job B!"
+                            }
+                        }
+
+                        stage('Finished') {
+                            steps {
+                                echo "✅ Done at ${new Date()}"
+                            }
+                        }
+                    }
+
+                    post {
+                        always {
+                            echo "🔖 Build #${env.BUILD_NUMBER} ended with ${currentBuild.currentResult}"
+                        }
+                    }
+                }
+            ]]>
+        </script>
+        <sandbox>true</sandbox>
+    </definition>
+
+    <disabled>false</disabled>
+</flow-definition>
