@@ -3,6 +3,19 @@
     <description>Example pipeline job</description>
     <keepDependencies>false</keepDependencies>
 
+    <properties>
+        <hudson.model.ParametersDefinitionProperty>
+            <parameterDefinitions>
+                <hudson.model.StringParameterDefinition>
+                    <name>CHG_NUMBER</name>
+                    <description>Change Request Number</description>
+                    <defaultValue></defaultValue>
+                    <trim>true</trim>
+                </hudson.model.StringParameterDefinition>
+            </parameterDefinitions>
+        </hudson.model.ParametersDefinitionProperty>
+    </properties>
+
     <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps">
         <script>
             <![CDATA[
