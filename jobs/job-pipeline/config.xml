@@ -25,9 +25,39 @@
                     options { timestamps() }
 
                     stages {
-                        stage('Say hello') {
+                        stage('Build') {
                             steps {
-                                echo "👋 Hello, ${env.BUILD_USER_ID ?: 'world'} from a pipeline job!"
+                                echo "Building project ..."
+                            }
+                        }
+
+                        stage('Unit Tests') {
+                            steps {
+                                echo "Running Unit Tests ..."
+                            }
+                        }
+
+                        stage('Integration Tests') {
+                            steps {
+                                echo "Running Integration Tests ..."
+                            }
+                        }
+
+                        stage('Package') {
+                            steps {
+                                echo "Packaging ..."
+                            }
+                        }
+
+                        stage('Security Scans') {
+                            steps {
+                                echo "Running Security Scans ..."
+                            }
+                        }
+
+                        stage('Deploy') {
+                            steps {
+                                echo "Deploying ..."
                             }
                         }
 
