@@ -2,8 +2,6 @@ matrix-auth
 configuration-as-code
 
 blueocean
-folders
-dashboard
 ansicolor
 timestamper
 htmlpublisher
