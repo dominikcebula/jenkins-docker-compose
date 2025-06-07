@@ -12,7 +12,8 @@ It's especially useful for experimentation and simple proof-of-concept (PoC) pro
 * Supports running locally compiled Jenkins plugins in [.hpi](https://wiki.jenkins.io/display/JENKINS/Plugin+Structure)
   format
 * Preconfigured with popular Jenkins [plugins](plugins/plugins.txt)
-* Includes sample jobs for demonstration
+* Includes sample jobs for demonstration, including a Maven job that demonstrates JDK 21 and Maven usage
+* Comes with JDK 21 and Maven pre-configured
 
 ## Usage
 
