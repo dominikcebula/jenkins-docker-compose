@@ -1,0 +1,10 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<project>
+    <description>Example freestyle project</description>
+
+    <builders>
+        <hudson.tasks.Shell>
+            <command>echo "Hello from freestyle project!"</command>
+        </hudson.tasks.Shell>
+    </builders>
+</project>
