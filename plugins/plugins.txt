@@ -2,6 +2,7 @@ matrix-auth
 configuration-as-code
 
 blueocean
+pipeline-stage-view
 ansicolor
 timestamper
 htmlpublisher
